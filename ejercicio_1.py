@@ -45,3 +45,5 @@ for i in lista_b:
         if i not in usuarios_sin_errores:
             usuarios_sin_errores.append(i)
 print("Los usuarios que no presentan errores son: \n" + str(usuarios_sin_errores))
+
+#Esta es mi nueva rama
