@@ -120,3 +120,5 @@ for k in range(1,3):
         menor=matriz_promedio[k]
         columna_menor=k
 print(f"El servidor mas eficiente es el servidor {columna_menor+1} y vale {menor}")
+
+
