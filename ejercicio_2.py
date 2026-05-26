@@ -52,13 +52,9 @@ c = -2 * (x ** 2) + 80 * x + 100
 valores = [0, 5, 10, 15, 20, 25, 30, 40, 50]
 
 for x in valores:
-    
     a = 40 *x + 200
     b = 70 *x + 50
     c = -2 * (x ** 2) + 80 * x + 100
-    
-
-    
     print("Para x =", x)
     print("A(x) =", a)
     print("B(x) =", b)
@@ -68,20 +64,22 @@ for x in valores:
 #Punto B.8
 #Crear una funcion que determine el plan mas economico para un valor de x
 
-
 valores = [0, 5, 10, 15, 20, 25, 30, 40, 50]
 
 for x in valores:
-    
-    a = 40 *x + 200
-    b = 70 *x + 50
-    c = -2 * (x ** 2) + 80 * x + 100
-    print(f"Para x={x}", end=" ")
-    if a < b and a < c:
+
+    a = 40*x + 200
+    b = 70*x + 50
+    c = -2 * (x**2) + 80*x + 100
+
+    if a <= b and a <= c:
+        print(f"Para x={x}", end=" ")
         print(f"El plan mas economico es A con un valor de: {a}")
 
-    elif b < a and b < c:
+    if b <= a and b <= c:
+        print(f"Para x={x}", end=" ")
         print(f"El plan mas economico es B con un valor de: {b}")
 
-    else:
+    if c <= a and c <= b:
+        print(f"Para x={x}", end=" ")
         print(f"El plan mas economico es C con un valor de: {c}")

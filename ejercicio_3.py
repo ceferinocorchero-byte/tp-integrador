@@ -54,6 +54,19 @@ for i in range(3):
 for i in range(3):
     print(T[i])
 
+#Parte D.7:
+
+tiempos_totales = []
+for i in range(3):
+    fila = []
+    for k in range(3):
+        producto = matriz_M[i][k] * matriz_c[i][k]
+        fila.append(producto)
+    tiempos_totales.append(fila)
+print("La matriz propuesta es: ")
+for i in range(3):
+    print(tiempos_totales[i])
+
 
 #Parte E.9:
 
